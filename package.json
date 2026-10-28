@@ -1,0 +1,39 @@
+{
+  "name": "sketch-image-finder",
+  "description": "Search Unsplash, Pexels and Pixabay, and generate photos or SVG vectors with AI from a text prompt or a reference image — right inside Sketch.",
+  "version": "1.0.0",
+  "author": "Denis Kozeev (https://kozeev.ru)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deniskozeev/sketch-image-finder.git"
+  },
+  "homepage": "https://github.com/deniskozeev/sketch-image-finder",
+  "engines": {
+    "sketch": ">=2025.1"
+  },
+  "skpm": {
+    "name": "Image Finder",
+    "manifest": "src/manifest.json",
+    "main": "image-finder.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ],
+    "resources": [
+      "resources/**/*.js"
+    ]
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "link": "skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.9.5"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.29.10",
+    "sketch-module-web-view": "^3.5.3"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Image Finder + AI",
+  "identifier": "com.deniskozeev.sketch-image-finder",
+  "description": "Search Unsplash, Pexels and Pixabay, and generate photos or SVG vectors with AI from a text prompt or a reference image — right inside Sketch.",
+  "author": "Denis Kozeev",
+  "homepage": "https://github.com/deniskozeev/sketch-image-finder",
+  "appcast": "https://raw.githubusercontent.com/deniskozeev/sketch-image-finder/main/.appcast.xml",
+  "icon": "icon.png",
+  "version": "1.0.0",
+  "compatibleVersion": 2025.1,
+  "bundleVersion": 1,
+  "disableCocoaScriptPreprocessor": true,
+  "commands": [
+    {
+      "name": "Open Image Finder + AI",
+      "identifier": "image-finder.open",
+      "script": "main.js",
+      "shortcut": "ctrl shift i",
+      "handlers": {
+        "run": "onOpen",
+        "actions": {
+          "SelectionChanged.finish": "onSelectionChanged",
+          "Shutdown": "onShutdown"
+        }
+      }
+    },
+    {
+      "name": "About",
+      "identifier": "image-finder.about",
+      "script": "main.js",
+      "handlers": {
+        "run": "onAbout"
+      }
+    }
+  ],
+  "menu": {
+    "title": "Image Finder + AI",
+    "items": ["image-finder.open", "-", "image-finder.about"]
+  }
+}

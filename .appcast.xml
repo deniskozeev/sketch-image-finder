@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+  <channel>
+    <title>Image Finder + AI</title>
+    <description>Updates for the Image Finder + AI Sketch plugin</description>
+    <item>
+      <title>1.0.0</title>
+      <enclosure url="https://github.com/deniskozeev/sketch-image-finder/releases/download/v1.0.0/image-finder.sketchplugin.zip" sparkle:version="1.0.0" />
+    </item>
+  </channel>
+</rss>
